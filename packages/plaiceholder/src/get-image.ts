@@ -102,7 +102,7 @@ const loadImage: ILoadImage = async (imagePath) => {
       `Failed to parse src \"${imagePath}\", if using relative image it must start with a leading slash "/"`
     );
 
-  const file = path.join("./public/", imagePath);
+  const file = path.join("", imagePath);
   const imageSize = getImageSize(file);
 
   return {
